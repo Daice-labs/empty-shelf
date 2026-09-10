@@ -1,0 +1,47 @@
+{
+ "study": "RP-T11 oracle arm",
+ "G0": "PASS",
+ "injected": {
+  "q1": 0.7363538591431467,
+  "q0": 0.42955001207897064,
+  "R_label": 9
+ },
+ "detector_ops": {
+  "u": 0.975609756097561,
+  "v": 0.024390243902439025
+ },
+ "oracle_fraction": 0.579,
+ "aurocs": {
+  "support(max_sim)": 0.767,
+  "support(k_eff)": 0.804,
+  "support(score_mass)": 0.779,
+  "confidence(noisy p)": 0.88,
+  "oracle(true q)": 0.961
+ },
+ "adjudication": [
+  {
+   "claim": "G0a Prop-1 identity: predicted flag precision matches measured",
+   "verdict": "PASS"
+  },
+  {
+   "claim": "G0b zero-linkage control: support signals show no value",
+   "verdict": "PASS"
+  },
+  {
+   "claim": "E-H1 support signals recover material oracle value at zero gen cost",
+   "verdict": "PASS"
+  },
+  {
+   "claim": "E-H2 complementarity by stratum; composition not dominated",
+   "verdict": "PASS"
+  },
+  {
+   "claim": "E-floor selective risk bounded by q0 at high coverage",
+   "verdict": "PASS"
+  },
+  {
+   "claim": "E-H4 label purity follows the (1-p)^R correction",
+   "verdict": "PASS"
+  }
+ ]
+}

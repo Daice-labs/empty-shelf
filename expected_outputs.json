@@ -1,0 +1,8 @@
+{
+  "q0_attempt": 0.430, "q1_attempt": 0.736,
+  "u": 0.976, "v": 0.024,
+  "predicted_precision": 0.250, "measured_precision": 0.256,
+  "zero_linkage_ladder": 0.4738, "auroc_max_sim": 0.767,
+  "a3_bias": 0.000116, "split_hash_prefix": "29f2fd4a5446cdbe",
+  "purity_measured": {"1": 0.4634, "3": 0.1585, "5": 0.0122, "9": 0.0244}
+}

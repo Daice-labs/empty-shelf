@@ -1,0 +1,7 @@
+claim,verdict
+G0a Prop-1 identity: predicted flag precision matches measured,PASS
+G0b zero-linkage control: support signals show no value,PASS
+E-H1 support signals recover material oracle value at zero gen cost,PASS
+E-H2 complementarity by stratum; composition not dominated,PASS
+E-floor selective risk bounded by q0 at high coverage,PASS
+E-H4 label purity follows the (1-p)^R correction,PASS

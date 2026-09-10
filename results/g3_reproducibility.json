@@ -1,0 +1,75 @@
+{
+  "label_provenance": "outcome labels constructed from designed true_fail_prob with injected linkage; EvalPlus supplies task and corpus text only; no test execution",
+  "split_integrity_sha256": "29f2fd4a5446cdbebfc1839bc337d7fd4300e03f964af74694bbb71f71b8a584",
+  "composed_auroc_repro": 0.8736,
+  "confidence_auroc_repro": 0.8805,
+  "composed_vs_confidence_R3_labels": {
+    "composed_auroc": 0.8318,
+    "confidence_auroc": 0.8264,
+    "gap": 0.0054,
+    "bootstrap_95CI": [
+      -0.0425,
+      0.0528
+    ],
+    "labels": "exact notebook stratified draw (R=3, seed SEED+77), reproduces reported 0.832/0.8264",
+    "interpretation": "CI spans zero: composition indistinguishable from confidence alone at this n"
+  },
+  "composed_vs_confidence_R9_labels": {
+    "gap": -0.0068,
+    "bootstrap_95CI": [
+      -0.0551,
+      0.0453
+    ],
+    "interpretation": "CI spans zero -> composition indistinguishable from confidence alone at this n"
+  },
+  "zero_linkage": {
+    "seed": 13,
+    "construction": "Bernoulli(0.35) in signals.csv row order",
+    "auroc_reproduced": 0.5262,
+    "column": "y_zero_linkage_seed13",
+    "auroc_ladder_convention": 0.4738,
+    "auroc_flipped_orientation": 0.5262,
+    "note": "paper reports 0.474 under the ladder's low-similarity-predicts-failure convention; chance either way"
+  },
+  "bootstrap_provenance": {
+    "composed_vs_confidence_R3": {
+      "seed": 79,
+      "resamples": 10000,
+      "unit": "task (paired resampling of both scores and labels)"
+    },
+    "composed_vs_confidence_R9": {
+      "seed": 77,
+      "resamples": 10000
+    }
+  },
+  "flag_precision_intervals": {
+    "k": 21,
+    "n": 82,
+    "wald_half_width": 0.0945,
+    "wilson_95": [
+      0.174,
+      0.36
+    ],
+    "wilson_half_width": 0.093,
+    "clopper_pearson_95": [
+      0.166,
+      0.364
+    ]
+  },
+  "a3_sensitivity": {
+    "assumption": "y independent of support score given stratum",
+    "realized_corr_score_failprob": {
+      "supported_z0": -0.195,
+      "unsupported_z1": 0.028
+    },
+    "delta_terms": {
+      "delta_supported": -0.0188,
+      "delta_unsupported": 0.0006
+    },
+    "flag_weights": {
+      "w_supported": 0.024,
+      "w_unsupported": 0.976
+    },
+    "realized_identification_bias": 0.000116
+  }
+}
